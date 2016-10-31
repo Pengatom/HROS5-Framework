@@ -1,6 +1,11 @@
 #!/bin/sh -e
 sudo killall demo &
 sleep 2
+if [ "$1" = "y" ]
+then
+  make
+fi
+sleep 3
 sudo ./demo &
 sleep 3
 sudo pkill bluetoothd &

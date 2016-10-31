@@ -16,7 +16,8 @@ CXXFLAGS += -g -O2 -DLINUX -Wall $(INCLUDE_DIRS)
 #CXXFLAGS += -O2 -DDEBUG -DLINUX -Wall $(INCLUDE_DIRS)
 LFLAGS += -g -lpthread -ljpeg -lrt -lbluetooth
 
-OBJECTS = StatusCheck.o main.o
+#OBJECTS = StatusCheck.o main.o
+OBJECTS = StatusCheck.o upper-body.o
 
 all: $(TARGET)
 
